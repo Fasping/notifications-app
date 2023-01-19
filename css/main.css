@@ -1,0 +1,35 @@
+/* General */
+
+:root {
+  --very--light-blue: #a2ceee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very--light-blue);
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Notifications */
+
+.notifications {
+  max-width: 730px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2.5rem;
+}
