@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>Notification App</title>
   </head>
@@ -15,28 +15,50 @@
     <main class="notifications">
       <!-- Header -->
       <header class="header">
-        <h1 class="header_title">Notification <span lass="unread-count">3</span></h1>
+        <h1 class="header_title">
+          Notification <span lass="unread-count">3</span>
+        </h1>
         <a href="#" class="header_link">Mark all as read</a>
       </header>
 
       <!-- Notification -->
       <article class="notification notification--unread">
+          <img
+            src="assets/images/avatar-mark-webber.png"
+            alt="User Avatar"
+            class="avatar"
+          />
         <h2 class="notification_title">
-          <strong>Mark Webber</strong>reacted to you recent post
+          <strong>Mark Webber</strong> reacted to you recent post
           <a href="#" class="link link--post">My first tournament today!</a>
           <span class="unread-bubble"></span>
         </h2>
         <p class="date">1m ago</p>
       </article>
 
-      <article class="notification">
-        <img
-          src="assets/images/avatar-ricky.png"
-          alt="User Avatar"
-          class="avatar"
-        />
+         <!-- Notification picture-->
+      <article class="notification notification--picture">
+          <img
+            src="assets/images/avatar-kimber-smith.png"
+            alt="User Avatar"
+            class="avatar"
+          />
         <h2 class="notification_title">
-          <strong>Rizky Hasanuddin</strong>sent you a private message
+          <strong>Kimberly Smith</strong> commented on your picture
+        </h2>
+        <p class="date">1 week ago</p>
+        <img src="assets/images/chess-party.jpeg" alt="Imagwe Attached" class="notification_image" />
+      </article>
+
+      <!-- Notification with message-->
+      <article class="notification notification--message">
+         <img
+            src="assets/images/avatar-ricky.png"
+            alt="User Avatar"
+            class="avatar"
+          />
+        <h2 class="notification_title">
+          <strong>Rizky Hasanuddin</strong> sent you a private message
         </h2>
         <p class="date">5 days ago</p>
         <p class="notification_message">
