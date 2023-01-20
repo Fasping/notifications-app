@@ -2,13 +2,16 @@
 
 :root {
   --very--light-blue: #a2ceee;
+  --blue: #0a327b;
+  --dark-grey-blue: #5E6778;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
   height: 100%;
 }
 
@@ -25,6 +28,11 @@ img {
   height: 50px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--dark-grey-blue);
+}
+
 /* Notifications */
 
 .notifications {
@@ -32,4 +40,26 @@ img {
   background-color: white;
   border-radius: 15px;
   padding: 2.5rem;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.unread-count {
+  background-color: var(--blue);
+  color: white;
+  font-size: 1, 5rem;
+  padding: .2rem .7rem;
+  border-radius: 6px;
+  margin-left: .2rem;
 }
