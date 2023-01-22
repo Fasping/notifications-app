@@ -6,6 +6,7 @@
   --dark-grey-blue: #5e6778;
   --very-light-grey-blue: #dde7ee;
   --snow: #eff3f7;
+  --red: #f65552;
 }
 
 * {
@@ -104,7 +105,7 @@ a {
   grid-template-areas:
     "avatar title image"
     "avatar date image";
-  grid-template-columns: min-content 1fr 1fr;
+  grid-template-columns: min-content 1fr min-content;
 }
 
 .avatar {
@@ -114,6 +115,16 @@ a {
 .notification_title {
   font-weight: normal;
   margin: 0;
+}
+
+.unread-bubble {
+  background-color: var(--red);
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  vertical-align: middle;
 }
 
 .notification_message {
@@ -126,4 +137,5 @@ a {
 .notification_image {
   width: 45px;
   height: 45px;
+  grid-area: image;
 }
