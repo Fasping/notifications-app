@@ -117,6 +117,14 @@ a {
   margin: 0;
 }
 
+.link {
+  font-weight: bold;
+}
+
+.link--group {
+  color: var(--blue);
+}
+
 .unread-bubble {
   background-color: var(--red);
   width: 8px;

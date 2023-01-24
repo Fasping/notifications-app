@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/main.css" />
-
     <title>Notification App</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+
   </head>
 
   <body>
+
     <!-- Notifications -->
     <main class="notifications">
+
       <!-- Header -->
       <header class="header">
         <h1 class="header_title">
@@ -23,11 +27,11 @@
 
       <!-- Notification -->
       <article class="notification notification--unread">
-          <img
-            src="assets/images/avatar-mark-webber.png"
-            alt="User Avatar"
-            class="avatar"
-          />
+        <img
+          src="assets/images/avatar-mark-webber.png"
+          alt="User Avatar"
+          class="avatar"
+        />
         <h2 class="notification_title">
           <strong>Mark Webber</strong> reacted to you recent post
           <a href="#" class="link link--post">My first tournament today!</a>
@@ -36,27 +40,31 @@
         <p class="date">1m ago</p>
       </article>
 
-         <!-- Notification picture-->
+      <!-- Notification picture-->
       <article class="notification notification--picture">
-          <img
-            src="assets/images/avatar-kimber-smith.png"
-            alt="User Avatar"
-            class="avatar"
-          />
+        <img
+          src="assets/images/avatar-kimber-smith.png"
+          alt="User Avatar"
+          class="avatar"
+        />
         <h2 class="notification_title">
           <strong>Kimberly Smith</strong> commented on your picture
         </h2>
         <p class="date">1 week ago</p>
-        <img src="assets/images/chess-party.jpeg" alt="Imagwe Attached" class="notification_image" />
+        <img
+          src="assets/images/chess-party.jpeg"
+          alt="Imagwe Attached"
+          class="notification_image"
+        />
       </article>
 
       <!-- Notification with message-->
       <article class="notification notification--message">
-         <img
-            src="assets/images/avatar-ricky.png"
-            alt="User Avatar"
-            class="avatar"
-          />
+        <img
+          src="assets/images/avatar-ricky.png"
+          alt="User Avatar"
+          class="avatar"
+        />
         <h2 class="notification_title">
           <strong>Rizky Hasanuddin</strong> sent you a private message
         </h2>
@@ -65,6 +73,20 @@
           Hello, thanks for setting up the Chess Club. I've been a member for a
           dew weeks! Im already having lots of fun and imporving my game.
         </p>
+      </article>
+
+      <!-- Notification-->
+      <article class="notification">
+        <img
+          src="assets/images/avatar-anna-kim.png"
+          alt="User Avatar"
+          class="avatar"
+        />
+        <h2 class="notification_title">
+          <strong>Anna Kim</strong> left the group
+          <a href="#" class="link link--group">Chess Club</a>
+        </h2>
+        <p class="date">2 week ago</p>
       </article>
     </main>
 
