@@ -5,16 +5,18 @@ const unreadCountElement = document.querySelector('.unread-count')
 
 //Listend for click events 
 
-markAllAsReadElement.addEventListener('click', markAllAsRead)
+markAllAsReadElement.addEventListener('click', () => {
+    markAllAsRead()
+    resetUnreadCount()
+})
 
 //Mark all notifications as read
 function markAllAsRead() {
-    //Get all unread notifications
+   
     const unreadNotifications = document.querySelectorAll(".notification--unread");
     unreadNotifications.forEach((notification) =>
       notification.classList.remove('notification--unread')
     );
-    resetUnreadCount()
 }
 
 function resetUnreadCount() {
