@@ -1,6 +1,7 @@
 // Get DOM Elements
 
 const markAllAsReadElement = document.querySelector('.header_link')
+const unreadCountElement = document.querySelector('.unread-count')
 
 //Listend for click events 
 
@@ -13,5 +14,11 @@ function markAllAsRead() {
     unreadNotifications.forEach((notification) =>
       notification.classList.remove('notification--unread')
     );
+    resetUnreadCount()
+}
+
+function resetUnreadCount() {
+    unreadCountElement.textContent = '0'
+
 }
 
